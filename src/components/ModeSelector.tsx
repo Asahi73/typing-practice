@@ -13,6 +13,7 @@ interface Props {
 
 const MODES: { id: TypingMode; label: string }[] = [
   { id: 'home', label: 'ホームポジション' },
+  { id: 'pinky', label: '小指特訓' },
   { id: 'english', label: '英単語・英文' },
   { id: 'japanese', label: '日本語ローマ字' },
 ];

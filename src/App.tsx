@@ -7,7 +7,7 @@ import { StatsBar } from './components/StatsBar';
 import { TypingArea } from './components/TypingArea';
 import { Keyboard } from './components/Keyboard';
 import { ResultModal } from './components/ResultModal';
-import { generateHomeText, HOME_STAGES } from './data/homeRow';
+import { generateHomeText, HOME_STAGES, PINKY_CHARS } from './data/homeRow';
 import { randomEnglishText } from './data/englishTexts';
 import { randomJapaneseText } from './data/japaneseTexts';
 import { useTypingSession, type TypingMode } from './lib/useTypingSession';
@@ -20,6 +20,8 @@ function newText(mode: TypingMode, homeStageId: string): string {
     const stage = HOME_STAGES.find((s) => s.id === homeStageId) ?? HOME_STAGES[0];
     return generateHomeText(stage.chars);
   }
+  // 小指特訓: 小指担当キーだけでランダム生成（やや長めに反復）。
+  if (mode === 'pinky') return generateHomeText(PINKY_CHARS, 14, 4);
   if (mode === 'english') return randomEnglishText();
   return randomJapaneseText();
 }

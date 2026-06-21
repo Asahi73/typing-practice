@@ -75,7 +75,7 @@ export function TypingArea({ session, mode, paused }: Props) {
             style={{ background: FINGER_COLORS[fingerInfo.finger] }}
           />
           <span>
-            この指で打つ: <strong>{FINGER_LABELS[fingerInfo.finger]}</strong>
+            <strong>{FINGER_LABELS[fingerInfo.finger]}</strong>
             {fingerInfo.needsShift && '（反対の手で Shift）'}
           </span>
         </div>

@@ -1,0 +1,63 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  background: #1a1e2b;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.tab {
+  padding: 8px 18px;
+  border: none;
+  background: transparent;
+  color: #8b92a5;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background 0.1s ease, color 0.1s ease;
+}
+
+.tab:hover {
+  color: #c8cdda;
+}
+
+.activeTab {
+  background: #4263eb;
+  color: #fff;
+}
+
+.stages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+.stage {
+  padding: 5px 12px;
+  border: 1px solid #2c3145;
+  background: #161a26;
+  color: #8b92a5;
+  font-size: 0.82rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.stage:hover {
+  border-color: #4263eb;
+  color: #c8cdda;
+}
+
+.activeStage {
+  background: #2c3145;
+  color: #f1f3f8;
+  border-color: #4263eb;
+}

@@ -1,0 +1,27 @@
+.bar {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 64px;
+}
+
+.value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f1f3f8;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: #8b92a5;
+  margin-top: 2px;
+}

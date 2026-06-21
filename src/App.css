@@ -1,0 +1,67 @@
+.app {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.header {
+  text-align: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f1f3f8;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  font-size: 0.92rem;
+  color: #8b92a5;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+}
+
+.abort,
+.skip {
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #2c3145;
+}
+
+.abort {
+  background: #2c3145;
+  color: #ff8787;
+}
+
+.abort:disabled {
+  color: #5b6072;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.skip {
+  background: #161a26;
+  color: #8b92a5;
+}
+
+.abort:not(:disabled):hover {
+  border-color: #fa5252;
+}
+
+.skip:hover {
+  border-color: #4263eb;
+  color: #c8cdda;
+}

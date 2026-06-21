@@ -1,0 +1,77 @@
+.area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 24px;
+  background: #1a1e2b;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 760px;
+  box-sizing: border-box;
+}
+
+.text {
+  font-size: 1.9rem;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  word-break: break-all;
+  text-align: center;
+  font-family: 'SF Mono', 'Menlo', monospace;
+}
+
+.done {
+  color: #5cb85c;
+}
+
+.current {
+  color: #11151f;
+  background: #fcc419;
+  border-radius: 4px;
+  padding: 0 2px;
+}
+
+.errorChar {
+  color: #fff;
+  background: #fa5252;
+  border-radius: 4px;
+  padding: 0 2px;
+}
+
+.pending {
+  color: #6b7286;
+}
+
+.space {
+  opacity: 0.55;
+}
+
+.romaji {
+  font-size: 1.2rem;
+  font-family: 'SF Mono', 'Menlo', monospace;
+  letter-spacing: 0.1em;
+}
+
+.romajiDone {
+  color: #5cb85c;
+}
+
+.romajiPending {
+  color: #8b92a5;
+}
+
+.finger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #c8cdda;
+  margin-top: 2px;
+}
+
+.swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  display: inline-block;
+}

@@ -13,14 +13,14 @@ export interface TypingUnit {
   patterns: string[];
 }
 
-export type TypingMode = 'home' | 'english' | 'japanese';
+export type TypingMode = 'home' | 'pinky' | 'english' | 'japanese';
 
 /** お題テキストとモードから入力ユニット列を作る。 */
 export function buildUnits(text: string, mode: TypingMode): TypingUnit[] {
   if (mode === 'japanese') {
     return toRomajiUnits(text).map((u) => ({ display: u.kana, patterns: u.patterns }));
   }
-  // 英語・ホーム: 1文字ずつ。文字そのものを唯一の許容パターンにする。
+  // 英語・ホーム・小指特訓: 1文字ずつ。文字そのものを唯一の許容パターンにする。
   return Array.from(text).map((ch) => ({ display: ch, patterns: [ch] }));
 }
 

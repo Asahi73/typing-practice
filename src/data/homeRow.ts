@@ -16,6 +16,10 @@ export const HOME_STAGES: HomeStage[] = [
   { id: 'all-letters', label: '全アルファベット', chars: 'abcdefghijklmnopqrstuvwxyz' },
 ];
 
+// 小指特訓モードで使う文字。左小指(a q z)・右小指(p ; /)の担当キーを集めたもの。
+// 小指は最も弱く打ち間違えやすいので、これらを集中的に反復する。
+export const PINKY_CHARS = 'aqzp;/';
+
 /**
  * 指定文字集合から、空白区切りの「単語」列をランダム生成する。
  * @param chars 使用する文字

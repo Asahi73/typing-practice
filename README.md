@@ -59,4 +59,5 @@ node --experimental-strip-types scripts/romaji_check.ts
 
 ## ライセンス
 
-個人練習用に作ったものですが、自由に使ってもらって構いません。
+[MIT License](LICENSE) で公開しています。著作権表示とライセンス文を保持すれば、
+商用・非商用を問わず、複製・改変・再配布が自由に行えます。
